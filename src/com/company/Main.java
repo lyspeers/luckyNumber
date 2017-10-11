@@ -11,11 +11,29 @@ public class Main {
 
             randomNum newNum = new randomNum(n);
             newNum.perfectRandom();
-            System.out.print("hello " + n + " your lucky number is " + newNum.rn);
+            System.out.println("hello " + n + " your lucky number is " + newNum.rn);
+            while (i >= 1){
 
-            in = new Scanner(System.in);
-            System.out.println("Would you like to exit(0), See you number again(1) or enter a new name(2)");
-            i = in.nextInt();
+                in = new Scanner(System.in);
+                System.out.println(" ");
+                System.out.println("Would you like to exit(0), See you number again(1), or enter a new name(2)");
+                i = in.nextInt();
+
+                if(i == 2){
+                    break;
+
+                }else if(i == 1){
+                    System.out.println(n + " your lucky number is " + newNum.rn);
+
+                }else if(i == 0){
+                    break;
+
+                }else{
+                    System.out.println("PLease input a valid input");
+
+                }
+            }
         }
+        System.out.print("Thank you for using the lucky number generator");
     }
 }

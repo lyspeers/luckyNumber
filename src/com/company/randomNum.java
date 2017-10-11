@@ -10,7 +10,9 @@ public class randomNum {
     public void perfectRandom(){
         rn = (int)(Math.random()*50);
         rn = rn * rn;
+
     }
     public String name;
+
     public int rn;
 }
